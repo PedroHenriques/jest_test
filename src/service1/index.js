@@ -56,6 +56,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 export default function Game() {
   const [history, setHistory] = react.useState([Array(9).fill(null)]);
+  setHistory("hello world");
   // const [currentMove, setCurrentMove] = useState(0);
   // const xIsNext = currentMove % 2 === 0;
   // const currentSquares = history[currentMove];

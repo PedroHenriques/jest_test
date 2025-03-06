@@ -31,4 +31,9 @@ describe('Game', () => {
       });
     });
   });
+
+  it('should call the setter function returned from the 1st call to useState, from the react module, once', () => {
+    sut.default();
+    expect(doubles.setHistory.mock.calls.length).toBe(1);
+  });
 });
