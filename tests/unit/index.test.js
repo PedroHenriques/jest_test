@@ -2,10 +2,7 @@
 const sut = require('../../src/service1/index');
 
 const react = require('react');
-jest.mock('react', ()=>({
-  ...jest.requireActual('react'),
-  useState: jest.fn(),
-}))
+jest.mock('react');
 
 describe('Game', () => {
   const doubles = {};
